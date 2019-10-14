@@ -1,0 +1,98 @@
+
+
+body {
+    background-image: url("../img/background.jpg");
+    background-position: center;
+}
+
+hr {
+    margin: 3px;
+}
+
+.calc {
+    margin: auto;
+    background-color: gray;
+    max-width: 320px;
+    border : solid darkgray 3px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 6px black;
+}
+
+.brand {
+    text-align: end;
+    margin: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.name {
+    font-weight: bolder;
+}
+
+.ver {
+    font-size: 0.7em;
+}
+
+.lcd {
+    background-color: lightgray;
+    border: solid gray 2px;
+    border-radius: 8px;
+    margin: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: end;
+    padding: 5px;
+    box-shadow: -1px -2px 3px black;
+}
+
+.topline {
+    font-size: 0.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.memory {
+    float: left;
+    visibility: hidden;      
+}
+
+.buttonrow {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: white;
+    margin : 3px;
+    padding: 2%;
+    height: 2.5em;
+    width: 3em;
+    border: solid black 2px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 1px 2px 3px black;
+}
+
+.button:hover {
+    background-color: lightsteelblue;
+}
+
+.button:active {
+    background-color: steelblue;
+    box-shadow: unset ;
+}
+
+.eq {
+    width: 7.5em !important;
+}
+
+.footer {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: .7em;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.5em;
+}
+
+

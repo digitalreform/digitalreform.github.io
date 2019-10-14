@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myCalc</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="./js/lib.js"></script>  
+</head>
+
+<body>
+    
+    <div class="calc">
+        
+        <div class="brand">
+            <span class="name">myCalc</span>
+            <span class="ver">v0.99RC</span>
+        </div>
+        
+        <hr>
+        
+        <div class="lcd">
+            <p class="topline" id=topLine>0</p>
+            <span class="memory" id="memIcon">M</span>
+            <span id="lcdMain">0</span>
+        </div>
+        
+        <hr>
+        
+        <div class="buttonrow">
+            <span class="button" onclick="clearAll()">CE</span>
+            <span class="button" onclick="clearLCD()">C</span>
+            <span class="button" onclick="memButton()" >M</span>
+            <span class="button" onclick="operClick('+')">+</span>
+        </div>
+        
+        <div class="buttonrow">
+                <span class="button number" onclick="numberClick(7)">7</span>
+                <span class="button number" onclick="numberClick(8)">8</span>
+                <span class="button number" onclick="numberClick(9)">9</span>
+                <span class="button" onclick="operClick('-')">-</span>
+        </div>
+        
+        <div class="buttonrow">
+                <span class="button number" onclick="numberClick(4)">4</span>
+                <span class="button number" onclick="numberClick(5)">5</span>
+                <span class="button number" onclick="numberClick(6)">6</span>
+                <span class="button" onclick="operClick('*')">X</span>
+        </div>
+        
+        <div class="buttonrow">
+                <span class="button number" onclick="numberClick(1)">1</span>
+                <span class="button number" onclick="numberClick(2)">2</span>
+                <span class="button number" onclick="numberClick(3)">3</span>
+                <span class="button" onclick="operClick('/')">/</span>
+        </div>
+        
+        <div class="buttonrow">
+                <span class="button number" onclick="numberClick(0)">0</span>
+                <span class="button"onclick="numberClick('.')">.</span>
+                <span class="button eq" onclick="operClick('=')">=</span>
+        </div>
+        
+        <hr>
+        
+        <div class="footer">&copy; Digital Reform</div>
+        
+    </div>
+    
+    <script src="./js/javascript.js"></script>
+   
+</body>
+</html>
