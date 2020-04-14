@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildforSDG CoVID19</title>
+    <link rel="stylesheet" href="./mvp.css">
+</head>
+<body>
+    <header>
+        <h1>CoVID19 Estimator for #BuildforSDG</h1>
+        <p>Enter the data in the form to get estimations.</p>
+    </header> 
+    <div style="display: inline-flex; flex-wrap: wrap; justify-content: space-evenly; width: 100vw;">
+        <div style="width: 425px;">
+            <p>Please enter <u>ALL</u> fields.</p>
+            <form action="" name="data-form" id="data-form">
+                <label for="data-population">Population: </label>
+                <input name="data-population" type="number" min="1" id="data-population" data-population required>
+
+                <label for="data-reported-cases">Reported Cases: </label>
+                <input name="data-reported-cases" type="number" min="1" id="data-reported-cases" data-reported-cases required>
+
+                <label for="data-total-hospital-beds">Total Hospital Beds: </label>
+                <input name="data-total-hospital-beds" type="number" min="1" id="data-total-hospital-beds" data-total-hospital-beds required>
+                
+                <label for="data-time-to-elapse">Time to Elapse: </label>
+                <input name="data-time-to-elapse" type="number" min="1" id="data-time-to-elapse" data-time-to-elapse required>
+                
+                <label for="data-period-type">Period Type: </label>
+                <select required name="data-period-type" min="1" id="data-period-type" data-period-type required>
+                    <option value="days">Days</option>
+                    <option value="weeks">Weeks</option>
+                    <option value="months">Months</option>
+                </select>
+            </form>
+            <button id="data-go-estimate" name="data-go-estimate" data-go-estimate>Get Estimate !</button>
+        </div>
+
+        <div style="width: 425px;">
+            <h3>Normal Impact</h3>
+            <table>
+                <tr>
+                    <th>Currently Infected</th>
+                    <td id="currentInfected">0</td>
+                </tr>
+                <tr>
+                    <th>Infection after Period</th>
+                    <td id="periodInfected">0</td>
+                </tr>
+                <tr>
+                    <th>Severe Cases after Period</th>
+                    <td id="severeCases">0</td>
+                </tr>
+                <tr>
+                    <th>Hospital Beds after Period</th>
+                    <td id="hospBeds">0</td>
+                </tr>
+                <tr>
+                    <th>ICU Cases after Period</th>
+                    <td id="ICUCases">0</td>
+                </tr>
+                <tr>
+                    <th>Ventilators After Period</th>
+                    <td id="ventilatorCases">0</td>
+                </tr>
+                <tr>
+                    <th>Economic Loss After Period ($)</th>
+                    <td id="dollarLoss">0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="width: 425px;">
+            <h3>Severe Impact</h3>
+            <table>
+                <tr>
+                    <th>Currently Infected</th>
+                    <td id="ScurrentInfected">0</td>
+                </tr>
+                <tr>
+                    <th>Infection after Period</th>
+                    <td id="SperiodInfected">0</td>
+                </tr>
+                <tr>
+                    <th>Severe Cases after Period</th>
+                    <td id="SsevereCases">0</td>
+                </tr>
+                <tr>
+                    <th>Hospital Beds after Period</th>
+                    <td id="ShospBeds">0</td>
+                </tr>
+                <tr>
+                    <th>ICU Cases after Period</th>
+                    <td id="SICUCases">0</td>
+                </tr>
+                <tr>
+                    <th>Ventilators After Period</th>
+                    <td id="SventilatorCases">0</td>
+                </tr>
+                <tr>
+                    <th>Economic Loss After Period ($)</th>
+                    <td id="SdollarLoss">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./javascript.js"></script>
+
+</body>
+</html>
