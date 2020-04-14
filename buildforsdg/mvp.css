@@ -4,7 +4,7 @@
     --border-radius: 5px;
     --box-shadow: 2px 2px 10px;
     
-    --color: #0097fc;
+    --color: #f7f7f7;
     --color-accent: #0097fc4f;
     --color-bg: #333;
     --color-bg-secondary: #555;
@@ -261,7 +261,7 @@ a b,
 a strong,
 button {
     background-color: var(--color);
-    border: 2px solid var(--color);
+    border: 2px solid var(--color-accent);
     color: var(--color-bg);
 }
 
